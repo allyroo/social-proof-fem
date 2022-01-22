@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
 html {
   box-sizing: border-box;
 }
@@ -10,53 +12,128 @@ html {
 body {
   background-image: url("img/bg-pattern-top-desktop.svg"),
     url("/img/bg-pattern-bottom-desktop.svg");
+  background-position: bottom, top;
+  font-family: "Spartan", sans-serif;
 }
 
 main {
-  width: 50em;
+  width: 55em;
+  height: 30em;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background: white;
 }
 .header {
   display: flex;
   justify-content: space-between;
 
   align-items: center;
+  width: 100%;
 }
 
-.title {
+h1 {
+  color: hsl(300, 43%, 22%);
+}
+p {
+  min-width: 20em;
+  color: hsl(300, 43%, 22%);
+}
+.header-title {
   flex: 50%;
+  width: 30em;
 }
 .ratings {
   flex: 50%;
+  margin-left: 20px;
 }
 
-.rating-flex {
+.rating-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+  background-color: hsl(300, 24%, 96%);
+  margin: 10px;
+  padding: 10px;
+  height: 3em;
+  white-space: nowrap;
+  border-radius: 6px;
+  width: 25em;
 }
+.rating {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  font-size: 10px;
+  margin-left: 15px;
+}
+.rating1 {
+}
+.rating2 {
+  margin-left: 30px;
+}
+.rating3 {
+  margin-left: 60px;
+}
+.stars {
+  width: 12px;
+  display: block;
+}
+
+/* FOOTER */
+
 .footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.title {
+.card {
+  height: 17em;
+  background: hsl(300, 43%, 22%);
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 2px;
+  border-radius: 6px;
+  font-size: 10px;
+  max-width: 27em;
+}
+
+.card2 {
+  margin-top: 30px;
+}
+.card3 {
+  margin-top: 60px;
+}
+
+.title-block {
+  padding-left: 20px;
   display: flex;
   align-items: left;
   padding-top: 20px;
-}
-.card {
-  margin: 10px;
-  background: purple;
+  height: 50px;
 }
 
-img {
+.profile {
+  padding-right: 20px;
+}
+.profile-img {
   border-radius: 50%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.name {
+  display: block;
+  color: hsl(0, 0%, 100%);
+}
+
+.verified-buyer {
+  display: block;
+  color: hsl(333, 80%, 67%);
+}
+.verified-buyer-text {
+  padding: 20px;
+  color: hsl(0, 0%, 100%);
 }
 
 @media only screen and (max-width: 600px) {
